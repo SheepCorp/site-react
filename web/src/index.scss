@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #101010;
+    background-image: url('./components/images/backPagInit.svg');
+}
+
+a {
+    text-decoration: none;
+}

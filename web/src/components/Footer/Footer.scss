@@ -1,0 +1,33 @@
+footer {
+    width: 100vw;
+    height: 8rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        color: #FFF;
+        font-size: 1.5rem;
+    }
+
+    a .logo {
+        width: 11.3rem;
+        height: 6.1rem;
+    }
+    span {
+        color: #FFF;
+        font-size: 1.5rem;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    @media only screen and (min-width: 600px) {
+        flex-direction: row;
+        justify-content: space-around;
+
+        span {
+            font-size: 2rem;
+        }
+    }
+}

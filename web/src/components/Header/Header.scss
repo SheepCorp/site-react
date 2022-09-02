@@ -1,0 +1,31 @@
+header {
+    width: 100vw;
+    height: 10rem; 
+    border-bottom: 1px solid #00000010;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    a {
+        color: #FFF;
+        font-size: 2rem;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    a .logo {
+        width: 11.3rem;
+        height: 6.1rem;
+    }
+    .nav {
+        .nav-bar {
+            list-style: none;
+            
+            display: flex;
+            gap: 7rem;
+        }
+    }
+    .talk-me {
+        padding: 1rem;
+        background-color: #1B162C;
+        border-radius: 1rem;
+    }
+}
