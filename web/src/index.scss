@@ -1,0 +1,31 @@
+// @font-face {
+//     font-family: 'Lexend Zetta';
+//     font-style: normal;
+//     font-weight: 400;
+//     src: url('./fonts/lexend-zetta-v24-latin-regular.eot');
+//     src: local(''),
+//         url('./fonts/lexend-zetta-v24-latin-regular.eot?#iefix') format('embedded-opentype'),
+//         url('./fonts/lexend-zetta-v24-latin-regular.woff2') format('woff2'),
+//         url('./fonts/lexend-zetta-v24-latin-regular.woff') format('woff'),
+//         url('./fonts/lexend-zetta-v24-latin-regular.ttf') format('truetype'),
+//         url('./fonts/lexend-zetta-v24-latin-regular.svg#LexendZetta') format('svg');
+
+// }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+    background-image: url('./components/images/bg-body.svg');
+}
+
+a {
+    text-decoration: none;
+}

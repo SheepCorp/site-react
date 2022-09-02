@@ -1,0 +1,38 @@
+.center-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+
+    img {
+        width: 379px;
+        height: 205px;
+
+    }
+
+    h1 {
+        font-family: 'Lexend Zetta', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 90px;
+        line-height: 112px;
+        text-align: center;
+
+        color: #FFFFFF;
+
+    }
+
+    h2 {
+        font-family: 'Lexend Zetta', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 37px;
+        line-height: 46px;
+        text-align: center;
+        width: 320px;
+
+        color: #FFFFFF;
+    }
+}
