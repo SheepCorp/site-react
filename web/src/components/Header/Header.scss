@@ -7,13 +7,9 @@ header {
     justify-content: space-evenly;
     align-items: center;
     a {
-        color: #FFF;
+        color: #ffffffcc;
         font-size: 2rem;
         font-family: 'Roboto Condensed', sans-serif;
-    }
-    a .logo {
-        width: 11.3rem;
-        height: 6.1rem;
     }
     .nav {
         .nav-bar {
@@ -21,11 +17,40 @@ header {
             
             display: flex;
             gap: 7rem;
+
+            a {
+                padding: 3rem 0;
+
+                background-image:
+                linear-gradient(
+                    transparent 0%,
+                    transparent 98%,
+                    #00FF38 98%,
+                    #00FF38 100%);
+        
+                background-repeat: no-repeat;
+                background-size: 0% 100%;
+                background-position-x: right;
+            
+                transition: background-size 300ms;
+
+                &:hover {
+                    color: #FFF;
+                    background-size: 100% 100%;
+                    background-position-x: left;
+                }
+            }
         }
     }
     .talk-me {
         padding: 1rem;
         background-color: #1B162C;
-        border-radius: 1rem;
+        border-radius: .5rem;
+        transition-duration: 300ms;
+
+        &:hover {
+            color: #FFF;
+            background-color: #110310;
+        }
     }
 }

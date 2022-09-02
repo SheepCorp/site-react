@@ -1,9 +1,10 @@
 import "./Header.scss"
+import logo from '../images/logologo.png'
 
 function Header() {
     return (
         <header>
-            <a className="logo" href="#"><img src="../images/logo.svg" alt="Logo SheepCorp" />SHEEP CORP</a>
+            <a className="logo" href="#"><img src={logo} alt="Logo SheepCorp" /></a>
             <nav className="nav">
                 <ul className="nav-bar">
                     <li><a href="#">Página Inicial</a></li>
