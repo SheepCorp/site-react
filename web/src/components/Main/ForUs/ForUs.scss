@@ -1,15 +1,16 @@
 .ForUs {
-    margin-top: 15rem;
+    width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     h2 {
         text-align: center;
-        width: 906px;
-        height: 68px;
-        font-size: 40px;
+        width: 80%;
+        font-size: 4rem;
         font-family: 'Roboto Condensed';
         color: #ffff;
     }
+
 }
