@@ -2,8 +2,9 @@
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
     h2 {
         text-align: center;
@@ -12,5 +13,16 @@
         font-family: 'Roboto Condensed';
         color: #ffff;
     }
-
+    .routes {
+        label {
+            font-size: 1rem;
+            color: #fff;
+        }
+        input[type="radio"] {
+            display: none;
+            &:checked {
+                display: block;
+            }
+        }
+    }
 }

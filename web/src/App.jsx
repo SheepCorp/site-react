@@ -3,6 +3,7 @@ import HomePage from './components/Main/HomePage/HomePage'
 import ForUs from './components/Main/ForUs/ForUs'
 import Footer from './components/Footer/Footer'
 import Projetos from './components/Main/Projetos/Projetos'
+import ContactUs from './components/Main/ContactUs/ContactUs'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <HomePage />
       <ForUs />
       <Projetos />
+      <ContactUs />
       <Footer />
     </>
   )

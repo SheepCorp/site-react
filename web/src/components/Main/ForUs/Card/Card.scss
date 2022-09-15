@@ -1,0 +1,15 @@
+.forUs-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 55rem;
+    width: 45rem;
+    background-color: #110310;
+    
+    h3 {
+        color: #FFF;
+        font-size: 3rem;
+    }
+}
