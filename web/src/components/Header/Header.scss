@@ -1,20 +1,22 @@
 header {
     width: 100vw;
-    height: 10rem; 
+    height: 10rem;
     border-bottom: 1px solid #00000010;
 
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
     a {
         color: #ffffffcc;
         font-size: 2rem;
         font-family: 'Roboto Condensed', sans-serif;
     }
+
     .nav {
         .nav-bar {
             list-style: none;
-            
+
             display: flex;
             gap: 7rem;
 
@@ -22,24 +24,15 @@ header {
                 padding: 3rem 0;
 
                 background-image:
-<<<<<<< Updated upstream
-                linear-gradient(
-                    transparent 0%,
-                    transparent 98%,
-                    #00FF38 98%,
-                    #00FF38 100%);
-        
-=======
                     linear-gradient(transparent 0%,
                         transparent 98%,
                         #00FF38 98%,
                         #00FF38 100%);
 
->>>>>>> Stashed changes
                 background-repeat: no-repeat;
                 background-size: 0% 100%;
                 background-position-x: right;
-            
+
                 transition: background-size 300ms;
 
                 &:hover {
@@ -50,6 +43,7 @@ header {
             }
         }
     }
+
     .talk-me {
         padding: 1rem;
         background-color: #1B162C;
