@@ -1,7 +1,7 @@
 function Dreams() {
     return (
-        <>
-        </>
+        <div>
+        </div>
     )
 }
 

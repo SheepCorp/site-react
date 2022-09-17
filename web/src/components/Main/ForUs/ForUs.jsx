@@ -1,26 +1,22 @@
 import { useState } from "react";
 import "./ForUs.scss";
-import Team from './Team'
-import Dreams from './Dreams'
-import Goals from './Goals'
+import Team from './Team/Team'
+import Dreams from './Dreams/Dreams'
+import Goals from './Goals/Goals'
 
 function ForUs() {
-    const [team, setTeam] = useState(true)
     const [dreams, setDreams] = useState(false)
     const [goals, setGoals] = useState(false)
 
     function showTeams() {
-        setTeam(true)
         setDreams(false)
         setGoals(false)
     }
     function showDreams() {
-        setTeam(false)
         setDreams(true)
         setGoals(false)
     }
     function showGoals() {
-        setTeam(false)
         setDreams(false)
         setGoals(true)
     }
@@ -32,22 +28,21 @@ function ForUs() {
                 desenvolvimento de projetos de pequenas e grandes empresas.
             </h2>
             <div className='routes'>
-                <div onClick={showTeams()}>
+                <div onClick={showTeams()} className='route'>
                     <img src="" alt="" />
                     <span>EQUIPE</span>
                 </div>
-                <div onClick={showDreams()}>
+                <div onClick={showDreams()} className='route'>
                     <img src="" alt="" />
                     <span>SONHO</span>
                 </div>
-                <div onClick={showGoals()}>
+                <div onClick={showGoals()} className='route'>
                     <img src="" alt="" />
                     <span>METAS</span>
                 </div>
             </div>
-            {team = true ? <Team/> : null}
-            {dreams = true ? <Dreams/> : null}
-            {goals = true ? <Goals/> : null}
+            {dreams === true ? <Dreams/> : <Team/>}
+            {goals === true ? <Goals/> : <Team/>}
         </section>
     );
 }

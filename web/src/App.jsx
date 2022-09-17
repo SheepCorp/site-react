@@ -10,7 +10,7 @@ function App() {
     <>
       <Header />
       <HomePage />
-      <ForUs />
+
       <Projetos />
       <ContactUs />
       <Footer />
