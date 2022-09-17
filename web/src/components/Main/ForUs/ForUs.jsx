@@ -1,7 +1,30 @@
+import { useState } from "react";
 import "./ForUs.scss";
-import Card from "./Card/Card";
+import Team from './Team'
+import Dreams from './Dreams'
+import Goals from './Goals'
 
 function ForUs() {
+    const [team, setTeam] = useState(true)
+    const [dreams, setDreams] = useState(false)
+    const [goals, setGoals] = useState(false)
+
+    function showTeams() {
+        setTeam(true)
+        setDreams(false)
+        setGoals(false)
+    }
+    function showDreams() {
+        setTeam(false)
+        setDreams(true)
+        setGoals(false)
+    }
+    function showGoals() {
+        setTeam(false)
+        setDreams(false)
+        setGoals(true)
+    }
+
     return (
         <section className="ForUs">
             <h2>
@@ -9,22 +32,22 @@ function ForUs() {
                 desenvolvimento de projetos de pequenas e grandes empresas.
             </h2>
             <div className='routes'>
-                <div>
-                    <input type="radio" name="route" id="team" />
-                    <label htmlFor="team">EQUIPE</label>
+                <div onClick={showTeams()}>
+                    <img src="" alt="" />
+                    <span>EQUIPE</span>
                 </div>
-                <div>
-                    <input type="radio" name="route" id="dreams" />
-                    <label htmlFor="dreams">SONHOS</label>
+                <div onClick={showDreams()}>
+                    <img src="" alt="" />
+                    <span>SONHO</span>
                 </div>
-                <div>
-                    <input type="radio" name="route" id="goals" />
-                    <label htmlFor="goals">METAS</label>
+                <div onClick={showGoals()}>
+                    <img src="" alt="" />
+                    <span>METAS</span>
                 </div>
             </div>
-            <div className="carrousel">
-                <Card name="Pedro Augusto - DEV" img="" alt="" />
-            </div>
+            {team = true ? <Team/> : null}
+            {dreams = true ? <Dreams/> : null}
+            {goals = true ? <Goals/> : null}
         </section>
     );
 }
