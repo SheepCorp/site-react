@@ -1,6 +1,15 @@
+import './Goals.scss'
+import CardProjects from './Projects/Projects'
+
 function Goals() {
     return (
-        <div>
+        <div className='metas'>
+            <p>Nossa meta é lançar alguns aplicativos e sites responsivos no mercado para que exista mais pessoas utilizando nossos serviços e aumentando o rendimento do seu próprio negócio</p>
+            <div className='projects'>
+                <CardProjects title='BARBEARIA' src='' alt=''/>
+                <CardProjects title='IGREJA' src='' alt=''/>
+                <CardProjects title='LANCHONETE' src='' alt=''/>
+            </div>
         </div>
     )
 }

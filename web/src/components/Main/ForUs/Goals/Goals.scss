@@ -1,0 +1,22 @@
+.metas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 80vw;
+    height: 60%;
+
+    p {
+        text-align: justify;
+        color: #FFF;
+        font-size: 2.5rem;
+    }
+
+    .projects {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
