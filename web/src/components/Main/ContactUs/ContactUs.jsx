@@ -3,38 +3,38 @@ import './ContactUs.scss'
 function ContactUs() {
     return (
         <section className='contactUs'>
-            <div className="title">
-                <div className="feedback">
-                    <h2>
-                        MANDE SEU
-                        <br/>
-                        <span>
-                            FEEDBACK
-                        </span>
-                    </h2>
-                </div>
-                <span>ou</span>
-                <div className="budget">
-                    <h2>
-                        FAÇA SEU
-                        <br/>
-                        <span>
-                            ORÇAMENTO
-                        </span>
-                    </h2>
-                </div>
+            <div class="row input-container">
+                <h1 class="title_contato">Fale Conosco</h1>
+
+                <form method="post" action="#">
+                    <div class="style-form-input full">
+                        <input type="text" name="nome" required />
+                        <label><i class="icon icon-user-1"></i>  Nome</label>
+                    </div>
+
+                    <div class="style-form-input">
+                        <input type="text" name="email" required />
+                        <label><i class="icon icon-mail-1"></i> E-mail</label>
+                    </div>
+
+                    <div class="style-form-input right">
+                        <input type="text" name="assunto" required />
+                        <label><i class="icon icon-info-circled"></i> Assunto</label>
+                    </div>
+
+                    <div class="style-form-input full">
+                        <textarea name="mensagem" required></textarea>
+                        <label><i class="icon icon-comments"></i> Mensagem</label>
+                    </div>
+                    <div class="style-form-input full">
+
+                        <button class="btn-submit">Enviar</button>
+
+                    </div>
+                </form>
             </div>
-            <form action="">
-                <label htmlFor="name">Nome*</label>
-                <input type="text" name="name" id="name" />
-                <label htmlFor="email">Email*</label>
-                <input type="email" name="email" id="email" />
-                <br />
-                <label htmlFor="message">Mensagem*</label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                <button type="submit"></button>
-            </form>
         </section>
+
     )
 }
 
