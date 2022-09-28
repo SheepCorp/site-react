@@ -1,9 +1,9 @@
 footer {
     width: 100vw;
-    height: 8rem;
+    height: 10rem;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
 
@@ -11,6 +11,7 @@ footer {
         color: #FFF;
         font-size: 1.5rem;
     }
+
     span {
         color: #ffffffcc;
         font-size: 1.5rem;
@@ -22,7 +23,7 @@ footer {
         gap: 2rem;
     }
 
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 1024px) {
         flex-direction: row;
         justify-content: space-around;
 

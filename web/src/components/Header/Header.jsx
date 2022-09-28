@@ -1,21 +1,50 @@
-import "./Header.scss"
-import logo from '../images/logologo.png'
+import { useState } from "react";
+import "./Header.scss";
+import logo from "../images/logologo.png";
 
 function Header() {
+    const [btn, setBtn] = useState("btn-mobile");
+    const [nav, setNav] = useState("nav");
+    function toggleMenu() {
+        if (btn.indexOf("active") === -1) {
+            setBtn("btn-mobile active");
+            setNav("nav active");
+        } else {
+            setBtn("btn-mobile");
+            setNav("nav");
+        }
+    }
     return (
         <header>
-            <a className="logo" href="#"><img src={logo} alt="Logo SheepCorp" /></a>
-            <nav className="nav">
-                <ul className="nav-bar">
-                    <li><a href="#">Página Inicial</a></li>
-                    <li><a href="#">Sobre nós</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Portifólio</a></li>
+            <a className="logo" href="#">
+                <img src={logo} alt="Logo SheepCorp" />
+            </a>
+            <nav className={nav}>
+                <button className={btn} onClick={toggleMenu}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul className="menu" role="menu">
+                    <li>
+                        <a href="#">Página Inicial</a>
+                    </li>
+                    <li>
+                        <a href="#">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="#">Projetos</a>
+                    </li>
+                    <li>
+                        <a href="#">Portifólio</a>
+                    </li>
                 </ul>
             </nav>
-            <a className="talk-me" href="#">Fale Conosco</a>
+            <a className="talk-me" href="#">
+                Fale Conosco
+            </a>
         </header>
-    )
+    );
 }
 
-export default Header
+export default Header;

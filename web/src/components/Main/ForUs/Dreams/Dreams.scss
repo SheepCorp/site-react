@@ -1,0 +1,39 @@
+.dreams {
+    height: 45rem;
+    width: 60vw;
+
+    display: flex;
+    align-items: center;
+
+    .dream {
+        color: #7ED957;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        
+        color: #FFF;
+        font-size: 4rem;
+        gap: 5rem;
+
+        .dream {
+            font-size: 3rem;
+        }
+
+        .center {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-size: 5rem;
+            
+            .dream {
+                font-size: 4rem;
+            }
+        }
+    }
+
+    img {
+        height: 40rem;
+    }
+}

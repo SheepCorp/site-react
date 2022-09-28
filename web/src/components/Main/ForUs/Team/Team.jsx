@@ -2,7 +2,7 @@ import Card from './Card/Card'
 
 function Team() {
     return (
-        <div>
+        <div className='team'>
             <Card name='Pedro Augusto - DEV' src='' alt=''/>
         </div>
     )
