@@ -6,9 +6,9 @@ function Goals() {
         <div className='metas'>
             <p>Nossa meta é lançar alguns aplicativos e sites responsivos no mercado para que exista mais pessoas utilizando nossos serviços e aumentando o rendimento do seu próprio negócio</p>
             <div className='projects'>
-                <CardProjects title='BARBEARIA' src='' alt=''/>
-                <CardProjects title='IGREJA' src='' alt=''/>
-                <CardProjects title='LANCHONETE' src='' alt=''/>
+                <CardProjects title='BARBEARIA' src='' alt='card barbearia' />
+                <CardProjects title='IGREJA' src='' alt='card igreja' />
+                <CardProjects title='LANCHONETE' src='' alt='card lanchonete' />
             </div>
         </div>
     )

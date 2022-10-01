@@ -9,7 +9,7 @@ function ContactUs() {
                 <form method="post" action="#">
                     <div class="style-form-input full">
                         <input type="text" name="nome" required />
-                        <label><i class="icon icon-user-1"></i>  Nome</label>
+                        <label><i class="icon icon-user-1"></i>  Nome Completo</label>
                     </div>
 
                     <div class="style-form-input">
@@ -19,13 +19,14 @@ function ContactUs() {
 
                     <div class="style-form-input right">
                         <input type="text" name="assunto" required />
-                        <label><i class="icon icon-info-circled"></i> Assunto</label>
+                        <label><i class="icon icon-info-circled"></i> Telefone</label>
                     </div>
 
                     <div class="style-form-input full">
                         <textarea name="mensagem" required></textarea>
                         <label><i class="icon icon-comments"></i> Mensagem</label>
                     </div>
+
                     <div class="style-form-input full">
 
                         <button class="btn-submit">Enviar</button>

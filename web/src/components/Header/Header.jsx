@@ -33,10 +33,10 @@ function Header() {
                         <a href="#">Sobre nós</a>
                     </li>
                     <li>
-                        <a href="#">Projetos</a>
+                        <a href="#">Portifólio</a>
                     </li>
                     <li>
-                        <a href="#">Portifólio</a>
+                        <a href="#">Projetos</a>
                     </li>
                 </ul>
             </nav>
