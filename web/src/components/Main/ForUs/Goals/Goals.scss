@@ -19,4 +19,13 @@
         flex-direction: row;
         justify-content: space-around;
     }
+
+    @media only screen and (max-width: 600px) {
+        height: 100%;
+        width: 90vw;
+        
+        .projects {
+            flex-direction: column;
+        }
+    }
 }

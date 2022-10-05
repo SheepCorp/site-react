@@ -1,12 +1,7 @@
 import './Projects.scss'
 
 function Projects(props) {
-    return (
-        <div className="cardProjects">
-            <h3>{props.title}</h3>
-            <img src={props.src} alt={props.alt} />
-        </div>
-    )
+    return <img src={props.src} alt={props.alt} />
 }
 
 export default Projects

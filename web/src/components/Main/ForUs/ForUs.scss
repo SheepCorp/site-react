@@ -66,4 +66,10 @@
             }
         }
     }
+
+    @media only screen and (max-width: 600px) {
+        .routes {
+            width: 90vw;
+        }
+    }
 }
