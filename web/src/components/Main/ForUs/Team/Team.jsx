@@ -1,5 +1,4 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper'
 import Card from './Card/Card'
 import './Team.scss'
 
@@ -26,8 +25,6 @@ function Team() {
             {...settings}
         >
                 <SwiperSlide><Card name='Lucas Ferreira - CEO' src='' alt=''/></SwiperSlide>
-                <SwiperSlide><Card name='Pedro Augusto - DEV' src='' alt=''/></SwiperSlide>
-                <SwiperSlide><Card name='Pedro Augusto - DEV' src='' alt=''/></SwiperSlide>
                 <SwiperSlide><Card name='Pedro Augusto - DEV' src='' alt=''/></SwiperSlide>
         </Swiper>
     )

@@ -40,7 +40,9 @@
 
     @media only screen and (max-width: 600px) {
         width: 90vw;
-        height: 100%;
+        height: auto;
         flex-direction: column;
+
+        text-align: center;
     }
 }
