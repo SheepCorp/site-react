@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -12,6 +13,16 @@ body {
     background-image: url('./components/images/bg-body.svg');
 
     overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Lexend Zetta';
+    src: local('Lexend Zetta'), url(./components/fonts/lexend-zetta-v24-latin-regular.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed'), url(./components/fonts/RobotoCondensed-Light.ttf) format('truetype')
 }
 
 a {

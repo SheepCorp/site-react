@@ -2,7 +2,7 @@ import './ContactUs.scss'
 
 function ContactUs() {
     return (
-        <section className='contactUs'>
+        <section id='contato' className='contactUs'>
             <div className="row input-container">
                 <h1 className="title_contato">Fale Conosco</h1>
 

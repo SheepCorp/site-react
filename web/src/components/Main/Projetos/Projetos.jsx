@@ -1,13 +1,12 @@
 import './Projetos.scss'
+import logoSolar from '../../images/LogoSolar.png'
 
 function Projetos() {
     return (
-        <section className='projects'>
+        <section id='portifolio' className='projects'>
             <h2>ESSES SÃO ALGUNS DE NOSSOS TRABALHOS QUE ESTÃO NA WEB</h2>
             <div className='card-projects'>
-                <div className='card'><h4>PONTO NORTE SOLAR</h4></div>
-                <div className='card'><h4>RAV MECANICA</h4></div>
-                <div className='card'><h4>PHOTOGRAFY</h4></div>
+                <a href=""><img src={logoSolar} alt="" /></a>
             </div>
         </section>
     )

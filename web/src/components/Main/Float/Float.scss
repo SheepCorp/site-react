@@ -1,0 +1,40 @@
+.float {
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        width: 5.75rem;
+        height: 5.75rem;
+        bottom: 2.5rem;
+        z-index: 1000;
+        box-shadow: 0.063rem 0.063rem 0.125rem #888;
+        font-size: 2.875rem;
+        color: #FFF;
+        border-radius: 100%;
+    }
+
+    #arrowUp {
+
+        right: 2.5rem;
+        border: 1px solid #FFF;
+        background-color: #000;
+
+        &:hover {
+            color: #000;
+            background-color: rgb(153, 145, 145);
+            cursor: pointer;
+        }
+    }
+
+    #wpp {
+        left: 2.5rem;
+        background-color: #25d366;
+
+
+        &:hover {
+            color: #000;
+        }
+    }
+
+}

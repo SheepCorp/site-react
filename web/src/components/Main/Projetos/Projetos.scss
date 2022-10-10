@@ -5,11 +5,11 @@
     align-items: center;
     justify-content: center;
     gap: 8rem;
-    
+
     h2 {
         text-align: center;
-        width: 80%;
-        font-size: 4rem;
+        width: 45%;
+        font-size: 3.2rem;
         font-family: 'Roboto Condensed';
         color: #fff;
     }
@@ -21,18 +21,8 @@
         justify-content: center;
         gap: 4rem;
 
-        .card {
-            background-color: #110310;
-            width: 37.8rem;
-            height: 34.4rem;
-
-            h4 {
-                color: #FFF;
-                text-align: center;
-                font-family: 'Roboto Condensed';
-                padding: 2rem 0;
-                font-size: 1.6rem;
-            }
+        img {
+            border-radius: 15px;
         }
     }
 }

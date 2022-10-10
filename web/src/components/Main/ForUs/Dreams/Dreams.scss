@@ -1,25 +1,47 @@
 .dreams {
     height: 45rem;
-    width: 60vw;
+    width: 80vw;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Roboto Condensed';
 
     .dream {
         color: #7ED957;
     }
 
+    .dream-txt1 {
+        color: #7ED957;
+        font-size: 4rem;
+    }
+
+    .dream-txt2 {
+        color: #7ED957;
+        font-size: 2.2rem;
+    }
+
     .text {
         display: flex;
         flex-direction: column;
-        
+
         color: #FFF;
         font-size: 4rem;
         gap: 5rem;
 
         .dream {
-            font-size: 3rem;
+            font-size: 4rem;
+        }
+
+        .txt-1 {
+            font-size: 4rem;
+            width: 90%;
+        }
+
+        .txt-2 {
+            font-size: 2.2rem;
+            width: 77%;
+
         }
 
         .center {
@@ -27,7 +49,27 @@
             flex-direction: column;
             text-align: center;
             font-size: 5rem;
-            
+
+            .center-1 {
+                font-size: 5.5rem;
+                padding: 3rem;
+            }
+
+            .dream1 {
+                color: #7ED957;
+                font-size: 5.5rem;
+            }
+
+            .center-2 {
+                font-size: 2rem;
+            }
+
+            .dream2 {
+                color: #7ED957;
+                font-size: 2rem;
+
+            }
+
             .dream {
                 font-size: 4rem;
             }

@@ -5,7 +5,7 @@
     .title_contato {
         display: flex;
         justify-content: center;
-        font-family: 'open_sansregular';
+        font-family: 'Roboto Condensed';
         font-weight: 600;
         font-size: 4rem;
         color: #fff;
@@ -17,7 +17,7 @@
     textarea:focus~label,
     input:valid~label,
     textarea:valid~label {
-
+        font-family: 'Roboto Condensed';
         font-size: 1.8rem;
         color: #fff;
         top: -11px;
@@ -65,10 +65,11 @@
         width: 100%;
         padding: 20px;
         border: 0.1rem solid;
-        font-size: 1rem;
+        font-size: 1.5rem;
         background-color: transparent;
         color: #fff;
         border-radius: 26px;
+        font-family: 'Roboto Condensed';
     }
 
     input:focus,
@@ -84,6 +85,9 @@
     }
 
     textarea {
+        padding: 20px;
+        font-size: 2rem;
+        color: #fff;
         width: 100%;
         min-height: 10rem;
         width: 100%;
@@ -91,6 +95,7 @@
         min-height: 10rem;
         border-radius: 17px;
         background-color: transparent;
+        resize: none;
     }
 
     .input-container {

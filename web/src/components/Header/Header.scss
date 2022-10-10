@@ -16,6 +16,7 @@ header {
         .btn-mobile {
             display: none;
         }
+
         .menu {
             list-style: none;
 
@@ -57,17 +58,18 @@ header {
             background-color: #110310;
         }
     }
+
     @media (max-width: 1024px) {
         .menu {
             display: flex;
             flex-direction: column;
             gap: 0;
-            
+
             height: 60vh;
             width: 100%;
             background: #000;
             transition: all 0.8s ease-out;
-    
+
             position: absolute;
             top: 7rem;
             right: -100vw;
@@ -79,7 +81,7 @@ header {
                 display: flex;
                 height: 100%;
             }
-    
+
             a {
                 display: flex;
                 align-items: center;
@@ -88,12 +90,13 @@ header {
                 border-bottom: 1px solid #FFFFFF20;
             }
         }
+
         .nav {
             .btn-mobile {
                 display: flex;
                 flex-direction: column;
                 padding: 0.5rem 1rem;
-        
+
                 color: #FFF;
                 background: none;
                 font-size: 1rem;
@@ -102,23 +105,23 @@ header {
             }
 
             text-align: center;
-    
+
             a:hover {
                 background: none;
             }
-    
+
             .btn-mobile {
                 transition: all .4s ease-in-out;
-                
+
                 span {
                     display: block;
                     width: 3rem;
                     height: .2rem;
                     border-radius: 9999px;
                     background-color: #FFF;
-    
+
                     transition: all .4s ease-in-out;
-    
+
                     &:not(:last-child) {
                         margin-bottom: .7rem;
                     }
@@ -127,23 +130,26 @@ header {
                 &.active {
                     transition-delay: .4s;
                     transform: rotate(45deg);
-    
-                    > span:nth-child(2) {
+
+                    >span:nth-child(2) {
                         width: 0;
                     }
-                    > span:nth-child(1),
-                    > span:nth-child(3) {
+
+                    >span:nth-child(1),
+                    >span:nth-child(3) {
                         transition-delay: .2s;
                     }
-                    > span:nth-child(1) {
+
+                    >span:nth-child(1) {
                         transform: translateY(9px);
                     }
-                    > span:nth-child(3) {
+
+                    >span:nth-child(3) {
                         transform: translateY(-9px) rotate(90deg);
                     }
                 }
             }
-    
+
             &.active .menu {
                 background-color: #000;
                 right: 0;

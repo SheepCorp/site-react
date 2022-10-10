@@ -27,20 +27,20 @@ function Header() {
                 </button>
                 <ul className="menu" role="menu">
                     <li>
-                        <a href="#">Página Inicial</a>
+                        <a href="#homePage">Página Inicial</a>
                     </li>
                     <li>
-                        <a href="#">Sobre nós</a>
+                        <a href="#forUs">Sobre nós</a>
                     </li>
                     <li>
-                        <a href="#">Portifólio</a>
+                        <a href="#portifolio">Portifólio</a>
                     </li>
                     <li>
-                        <a href="#">Projetos</a>
+                        <a href="#projects">Projetos</a>
                     </li>
                 </ul>
             </nav>
-            <a className="talk-me" href="#">
+            <a className="talk-me" href="#contato">
                 Fale Conosco
             </a>
         </header>
