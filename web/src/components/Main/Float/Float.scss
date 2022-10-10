@@ -12,6 +12,7 @@
         font-size: 2.875rem;
         color: #FFF;
         border-radius: 100%;
+        cursor: pointer;
     }
 
     #arrowUp {
@@ -23,7 +24,6 @@
         &:hover {
             color: #000;
             background-color: rgb(153, 145, 145);
-            cursor: pointer;
         }
     }
 
