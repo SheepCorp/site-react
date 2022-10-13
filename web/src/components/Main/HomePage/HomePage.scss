@@ -15,8 +15,9 @@
         justify-content: space-evenly;
 
         img {
-            width: 37.9rem;
-            height: 20.5rem;
+            width: 30vw;
+            min-width: 22rem;
+            max-height: 20.5rem;
 
         }
 
@@ -30,7 +31,12 @@
 
             color: #FFFFFF;
 
+            @media (max-width: 400px) {
+                font-size: 5rem;
+
+            }
         }
+
 
         h2 {
             font-family: 'Lexend Zetta', sans-serif;
@@ -79,4 +85,5 @@
             }
         }
     }
+
 }

@@ -4,7 +4,7 @@ import logoCentral from '../../images/logoCenter.svg'
 
 function HomePage() {
     return (
-        <section id='homePage' className='center-page'>
+        <section id='homePage   ' className='center-page'>
             <div className='title'>
                 <img src={logoCentral} alt="Logo central" />
                 <h1>SHEEP CORP</h1>

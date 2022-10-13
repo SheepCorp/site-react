@@ -2,6 +2,7 @@ import Card from './Card/Card'
 import './Team.scss'
 
 import bia from '../../../images/cards/bia.png'
+import vitoria from '../../../images/cards/vitoria.png'
 import pedro from '../../../images/cards/pedro.png'
 import lucas from '../../../images/cards/lucas.png'
 
@@ -15,7 +16,7 @@ const settings = {
         <Card name='Lucas Ferreira - CEO' src={lucas} alt='Foto Lucas' />,
         <Card name='Pedro Augusto - DEV' src={pedro} alt='Foto Pedro' />,
         <Card name='Bia Moraes - Designer' src={bia} alt='Foto Bia' />,
-        <Card name='Bia Moraes - Designer' src={bia} alt='Foto Bia' />
+        <Card name='Bia Moraes - Designer' src={vitoria} alt='Foto Bia' />
     ],
     responsive: {
         0: { items: 1 },
