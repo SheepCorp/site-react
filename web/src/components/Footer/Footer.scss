@@ -1,6 +1,6 @@
 footer {
     width: 100vw;
-    height: 23rem;
+    height: 10rem;
 
     display: flex;
     flex-direction: column;
@@ -45,7 +45,11 @@ footer {
             }
         }
 
+        @media only screen and (min-width: 1024px) {
+            flex-direction: row;
+            justify-content: space-around;
 
+        }
     }
 
 
