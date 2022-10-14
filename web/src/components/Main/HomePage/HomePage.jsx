@@ -11,7 +11,7 @@ function HomePage() {
                 <h2>DESENVOLVEDOR DE SOFTWARE</h2>
             </div>
             <div className='buttons-title'>
-                <a href="#">CONTATO</a>
+                <a href="#contato">CONTATO</a>
                 <a href="#">PROJETOS</a>
             </div>
         </section>

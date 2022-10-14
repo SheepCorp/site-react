@@ -13,6 +13,10 @@
         color: #FFF;
         font-size: 2.5rem;
         width: 76%;
+
+        @media (max-width:480px) {
+            text-align: center;
+        }
     }
 
     .projects {
@@ -21,6 +25,10 @@
         flex-direction: row;
         justify-content: space-around;
         padding: 15rem;
+
+        @media (max-width:480px) {
+            padding: 5rem;
+        }
     }
 
     @media only screen and (max-width: 600px) {

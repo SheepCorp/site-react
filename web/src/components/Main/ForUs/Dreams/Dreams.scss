@@ -29,6 +29,10 @@
         font-size: 4rem;
         gap: 5rem;
 
+        @media (max-width:480px) {
+            align-items: center;
+        }
+
         .dream {
             font-size: 4rem;
         }
@@ -36,6 +40,10 @@
         .txt-1 {
             font-size: 4rem;
             width: 90%;
+
+            @media (max-width:480px) {
+                font-size: 3rem;
+            }
         }
 
         .txt-2 {
@@ -78,6 +86,11 @@
 
     img {
         height: 40rem;
+
+        @media (max-width:480px) {
+            height: 30rem;
+            margin-top: 2rem;
+        }
     }
 
     @media only screen and (max-width: 600px) {

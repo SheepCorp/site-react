@@ -47,11 +47,19 @@ header {
         }
     }
 
+    @media (max-width: 480px) {
+        gap: 10rem;
+    }
+
     .talk-me {
         padding: 1rem;
         background-color: #1B162C;
         border-radius: .5rem;
         transition-duration: 300ms;
+
+        @media (max-width:480px) {
+            display: none;
+        }
 
         &:hover {
             color: #FFF;

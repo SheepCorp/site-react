@@ -11,6 +11,10 @@
         color: #fff;
         text-align: left;
         margin-bottom: 20px;
+
+        @media (max-width: 480px) {
+            font-size: 2rem;
+        }
     }
 
     input:focus~label,
@@ -70,6 +74,15 @@
         color: #fff;
         border-radius: 26px;
         font-family: 'Roboto Condensed';
+
+        @media (max-width: 480px) {
+            width: 90%;
+            padding: 15px;
+            font-size: 1.5rem;
+            border-radius: 20px;
+            margin-left: 3%;
+
+        }
     }
 
     input:focus,
@@ -96,6 +109,15 @@
         border-radius: 17px;
         background-color: transparent;
         resize: none;
+
+        @media (max-width: 480px) {
+            padding: 20px;
+            font-size: 1rem;
+            width: 90%;
+            height: 20rem;
+            margin-left: 3%;
+            border-radius: 15px;
+        }
     }
 
     .input-container {
@@ -140,7 +162,8 @@
 
     @media (max-width: 1024px) {
         .btn-submit {
-            width: 100%;
+            width: 90%;
+            margin-left: 3%;
             float: none;
             text-align: center;
         }

@@ -21,6 +21,11 @@
         font-size: 3.2rem;
         font-family: 'Roboto Condensed';
         color: #fff;
+
+        @media (max-width: 480px) {
+            width: 75%;
+            font-size: 2rem;
+        }
     }
 
     .card-projects {
@@ -34,6 +39,11 @@
             border-radius: 15px;
             width: 25rem;
             height: 25rem;
+
+            @media (max-width: 480px) {
+                width: 15rem;
+                height: 15rem;
+            }
         }
     }
 }
