@@ -1,6 +1,7 @@
 footer {
     width: 100vw;
-    height: 10rem;
+    height: 100%;
+    gap: 2rem;
 
     display: flex;
     flex-direction: column-reverse;
@@ -26,6 +27,7 @@ footer {
     @media only screen and (min-width: 1024px) {
         flex-direction: row;
         justify-content: space-around;
+        gap: 0;
 
         span {
             font-size: 2rem;

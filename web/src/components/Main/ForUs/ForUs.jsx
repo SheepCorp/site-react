@@ -36,18 +36,15 @@ function ForUs() {
             <div className="routes">
                 <label htmlFor={select1} className="route" onClick={Selected1}>
                     <input type="radio" name="route" id={select1} />
-                    <img src={imgEquipe} alt="" />
-                    <span>EQUIPE</span>
+                    <span><img src={imgEquipe} alt="" /> EQUIPE</span>
                 </label>
                 <label htmlFor={select2} className="route" onClick={Selected2}>
                     <input type="radio" name="route" id={select2} />
-                    <img src={imgSonho} alt="" />
-                    <span>SONHO</span>
+                    <span><img src={imgSonho} alt="" /> SONHO</span>
                 </label>
                 <label htmlFor={select3} className="route" onClick={Selected3}>
                     <input type="radio" name="route" id={select3} />
-                    <img src={imgMeta} alt="" />
-                    <span>METAS</span>
+                    <span><img src={imgMeta} alt="" /> METAS</span>
                 </label>
             </div>
             {select1.indexOf('checked') == 8 ? <Team /> : null}
