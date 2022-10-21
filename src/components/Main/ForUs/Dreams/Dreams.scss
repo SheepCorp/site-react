@@ -29,7 +29,7 @@
         font-size: 4rem;
         gap: 5rem;
 
-        @media (max-width:480px) {
+        @media (max-width:767px) {
             align-items: center;
         }
 
@@ -41,7 +41,7 @@
             font-size: 4rem;
             width: 90%;
 
-            @media (max-width:480px) {
+            @media (max-width:767px) {
                 font-size: 3rem;
             }
         }
@@ -87,13 +87,13 @@
     img {
         height: 40rem;
 
-        @media (max-width:480px) {
+        @media (max-width:767px) {
             height: 30rem;
             margin-top: 2rem;
         }
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 767px) {
         width: 90vw;
         height: auto;
         flex-direction: column;

@@ -14,9 +14,9 @@ import "react-alice-carousel/lib/scss/alice-carousel.scss";
 const settings = {
     items: [
         <Card name='Lucas Ferreira - CEO' src={lucas} alt='Foto Lucas' />,
-        <Card name='Pedro Augusto - DEV' src={pedro} alt='Foto Pedro' />,
-        <Card name='Bia Moraes - Designer' src={bia} alt='Foto Bia' />,
-        <Card name='Bia Moraes - Designer' src={vitoria} alt='Foto Bia' />
+        <Card name='Pedro Augusto - DEV - Front End' src={pedro} alt='Foto Pedro' />,
+        <Card name='Bia Moraes - Social Media' src={bia} alt='Foto Bia' />,
+        <Card name='Vitoria Ferreira - Designer' src={vitoria} alt='Foto Bia' />
     ],
     responsive: {
         0: { items: 1 },

@@ -23,7 +23,7 @@
         font-family: 'Roboto Condensed';
         color: #fff;
 
-        @media (max-width: 480px) {
+        @media (max-width: 767px) {
             width: 75%;
             font-size: 2rem;
         }
@@ -41,7 +41,7 @@
             width: 25rem;
             height: 25rem;
 
-            @media (max-width: 480px) {
+            @media (max-width: 767px) {
                 width: 15rem;
                 height: 15rem;
             }
