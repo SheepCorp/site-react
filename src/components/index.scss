@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+    background-image: url('./components/images/bg-body.svg');
+
+    overflow-x: hidden;
+
+
+}
+
+@font-face {
+    font-family: 'Lexend Zetta';
+    src: local('Lexend Zetta'), url(./components/fonts/lexend-zetta-v24-latin-regular.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed'), url(./components/fonts/RobotoCondensed-Light.ttf) format('truetype')
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+section:not(:first-of-type) {
+    margin-top: 20rem;
+
+    @media (max-width: 480px) {
+        margin-top: 8rem;
+    }
+}

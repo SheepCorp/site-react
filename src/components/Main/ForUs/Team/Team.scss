@@ -1,6 +1,15 @@
 .alice-carousel__stage {
-    display: flex;
-    gap: 15rem;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    transform-style: flat;
+    -webkit-transform-style: flat;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 
     @media (max-width: 767px) {
         margin-left: 10%;
