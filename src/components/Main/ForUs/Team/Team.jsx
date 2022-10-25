@@ -30,8 +30,27 @@ const settings = {
 }
 
 function Team() {
+    window.addEventListener('load', function () {
+        new Glider(document.querySelector('.glider'), {
+            ['setting-name']: 'setting-value'
+        })
+    })
     return (
-        <AliceCarousel {...settings} />
+        <>
+            <AliceCarousel {...settings} />
+            <div class="glider-contain">
+                <div class="glider">
+                    <div>your content here</div>
+                    <div>your content here</div>
+                    <div>your content here</div>
+                    <div>your content here</div>
+                </div>
+
+                <button aria-label="Previous" class="glider-prev">«</button>
+                <button aria-label="Next" class="glider-next">»</button>
+                <div role="tablist" class="dots"></div>
+            </div>
+        </>
     )
 }
 

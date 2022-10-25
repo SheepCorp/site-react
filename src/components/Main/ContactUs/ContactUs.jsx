@@ -1,9 +1,15 @@
 import './ContactUs.scss'
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
+import Snackbar from '@mui/material/Snackbar';
+import { Alert } from '@mui/material';
+
 
 function ContactUs() {
-    // const form = useRef();
+
+
+    const [statusEmail, setStatusEmail] = useState(true)
+
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -30,7 +36,9 @@ function ContactUs() {
             'hWB5hdEdNicJWApdM'
         )
             .then((result) => {
-                console.log(result.text);
+                setFormData({ name: '', email: '', phone: '', message: '' })
+                setStatusEmail({ statusEmail })
+
             }, (error) => {
                 console.log(error.text);
             });
@@ -96,6 +104,17 @@ function ContactUs() {
                 </div>
                 {/* </form> */}
             </div>
+
+            <Snackbar
+                anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
+                open={true}
+                onChange={(e) => setStatusEmail(e.target.value,)}
+            >
+                <Alert onClose={() => null} severity="success" sx={{ fontWeight: 'bold', fontSize: '2rem', backgroundColor: '#4E9A51', color: 'white', width: '100%' }}>
+                    Email enviado com sucesso!
+                </Alert>
+
+            </Snackbar>
         </section>
 
     )
