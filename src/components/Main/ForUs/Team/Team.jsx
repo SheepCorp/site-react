@@ -1,7 +1,11 @@
 import Card from './Card/Card'
 import './Team.scss'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper';
 import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 
 import bia from '../../../images/cards/bia.png'
@@ -11,16 +15,33 @@ import lucas from '../../../images/cards/lucas.png'
 
 function Team() {
     const settings = {
+        modules: [Navigation],
+        slidesPerView: 1,
+        spaceBetween: 50,
         breakpoints: {
-            480: {
-                width: 480,
+            300: {
+                width: 300,
                 slidesPerView: 1,
+                slidesPerGroup: 1,
             },
-            1024: {
-                width: 1024,
+            800: {
+                width: 800,
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+            },
+            1200: {
+                width: 1200,
                 slidesPerView: 3,
+                slidesPerGroup: 3,
+            },
+            1600: {
+                width: 1600,
+                slidesPerView: 4,
+                slidesPerGroup: 4,
             }
         },
+        navigation: true,
+
     }
 
     const items = [
