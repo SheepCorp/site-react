@@ -7,8 +7,9 @@ import { Alert } from '@mui/material';
 
 function ContactUs() {
 
-
-    const [statusEmail, setStatusEmail] = useState(true)
+    const [typeAlert, setTypeAlert] = useState("")
+    const [mensageAlert, setMensageAlert] = useState("")
+    const [statusEmail, setStatusEmail] = useState(false)
 
     const [formData, setFormData] = useState({
         name: "",
@@ -37,10 +38,15 @@ function ContactUs() {
         )
             .then((result) => {
                 setFormData({ name: '', email: '', phone: '', message: '' })
-                setStatusEmail({ statusEmail })
+                setStatusEmail(true)
+                setTypeAlert("success")
+                setMensageAlert("Email enviado com sucesso!")
 
             }, (error) => {
                 console.log(error.text);
+                setStatusEmail(true)
+                setTypeAlert("error")
+                setMensageAlert("Email não enviado!")
             });
     }
     return (
@@ -107,11 +113,18 @@ function ContactUs() {
 
             <Snackbar
                 anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
-                open={true}
+                open={statusEmail}
                 onChange={(e) => setStatusEmail(e.target.value,)}
             >
-                <Alert onClose={() => null} severity="success" sx={{ fontWeight: 'bold', fontSize: '2rem', backgroundColor: '#4E9A51', color: 'white', width: '100%' }}>
-                    Email enviado com sucesso!
+                <Alert onClose={() => setStatusEmail(false)} severity={typeAlert}
+                    sx={{
+                        fontWeight: 'bold',
+                        fontSize: '2rem',
+                        backgroundColor: typeAlert === 'success' ? '#4E9A51' : 'red',
+                        color: 'white',
+                        width: '100%'
+                    }}>
+                    {mensageAlert}
                 </Alert>
 
             </Snackbar>
