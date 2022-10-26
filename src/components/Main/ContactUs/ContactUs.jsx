@@ -93,6 +93,7 @@ function ContactUs() {
 
                 <div className="style-form-input full">
                     <textarea
+
                         value={formData.message}
                         onChange={
                             (e) => handleChangeFormData(e.target.value, 'message')
@@ -116,14 +117,16 @@ function ContactUs() {
                 open={statusEmail}
                 onChange={(e) => setStatusEmail(e.target.value,)}
             >
-                <Alert onClose={() => setStatusEmail(false)} severity={typeAlert}
+                <Alert
+                    onClose={() => setStatusEmail(false)} severity={typeAlert}
                     sx={{
                         fontWeight: 'bold',
                         fontSize: '2rem',
-                        backgroundColor: typeAlert === 'success' ? '#4E9A51' : 'red',
+                        backgroundColor: typeAlert === 'success' ? '#4E9A51' : '#D32F2F',
                         color: 'white',
-                        width: '100%'
-                    }}>
+                        width: '95%'
+                    }}
+                >
                     {mensageAlert}
                 </Alert>
 
