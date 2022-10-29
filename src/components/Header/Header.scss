@@ -81,7 +81,7 @@ header {
             transition: all 0.8s ease-out;
 
             position: absolute;
-            top: 7rem;
+            top: 10rem;
             right: -100vw;
             z-index: 1000;
             overflow: hidden;
@@ -99,13 +99,18 @@ header {
                 width: 100%;
                 border-bottom: 1px solid #FFFFFF20;
             }
+
+        }
+        .nav.active .menu {
+            display: flex;
+            flex-direction: column;
+            visibility: visible;
+            background-color: #000;
+            right: 0;
+            gap: 0;
         }
 
         .nav {
-
-            &:active .menu{
-                display: flex;
-            }
             .btn-mobile {
                 display: flex;
                 flex-direction: column;
@@ -162,13 +167,6 @@ header {
                         transform: translateY(-9px) rotate(90deg);
                     }
                 }
-            }
-
-            &.active .menu {
-                background-color: #000;
-                right: 0;
-                visibility: visible;
-                gap: 0;
             }
         }
     }
