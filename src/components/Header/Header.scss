@@ -2,6 +2,7 @@ header {
     width: 100vw;
     height: 10rem;
     border-bottom: 1px solid #00000010;
+    overflow-x: hidden;
 
     display: flex;
     justify-content: space-evenly;
@@ -19,10 +20,11 @@ header {
 
         .menu {
             list-style: none;
-
-            display: flex;
             gap: 7rem;
 
+            @media (min-width: 1024px) {
+                display: flex;
+            }
             a {
                 padding: 3rem 0;
 
@@ -67,9 +69,9 @@ header {
         }
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1023px) {
         .menu {
-            display: flex;
+            display: none;
             flex-direction: column;
             gap: 0;
 
@@ -100,6 +102,10 @@ header {
         }
 
         .nav {
+
+            &:active .menu{
+                display: flex;
+            }
             .btn-mobile {
                 display: flex;
                 flex-direction: column;
